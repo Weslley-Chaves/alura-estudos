@@ -1,0 +1,28 @@
+img {
+    max-width: 100%;
+    /* a imagem se ajusta ao tamanho da tela */
+    height: auto;
+    /* mantém proporção original */
+    display: block;
+    /* evita espaços extras */
+    border-radius: 8px;
+    /* opcional, para deixar cantos arredondados */
+}
+
+h1 {
+    text-align: right;
+    color: brown;
+    font-family: monospace;
+}
+
+h2 {
+    color: brown;
+    font-family: monospace;
+}
+
+p,
+ul,
+li {
+    font-family: monospace;
+    font-weight: bold;
+}

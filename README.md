@@ -17,9 +17,10 @@ Aqui organizo os cursos por pastas, separando cada aula em subpastas, com arquiv
 
 ## 👨‍💻 Cursos em andamento
 
-| Curso                           | Progresso    | Pasta                      |
-| ------------------------------- | ------------ | -------------------------- |
-| Lógica de Programação com JS | Em andamento | [`logica-js/`](./logica-js) |
+| Curso                           | Progresso  | Pasta                      |
+| ------------------------------- | ---------- | -------------------------- |
+| Lógica de Programação com JS | Concluído | [`logica-js/`](./logica-js) |
+| A partir do zero: HTML e CSS para projetos web | Em andamento | [`html-css/`](./html-css) |
 
 > ✅ *As pastas são criadas conforme avanço nos cursos e organizadas por aula.*
 

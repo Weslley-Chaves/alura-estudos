@@ -1,0 +1,21 @@
+.lineRed {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    /* adiciona espaço interno */
+    border-radius: 3px;
+    /* cantos arredondados */
+}
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.estilizacao {
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+}

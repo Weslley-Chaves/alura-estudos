@@ -1,13 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
+<!-- O head (cabeçalho) armazena as tags de elementos que não influênciam o corpo da página web que está sendo desenvolvida -->
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=s, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Utilize em "content" width=device-width - melhor compatibilidade com aparelhos mobiles.  -->
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <!-- Atribuindo um favicon (ícone) a página principal. -->
+    <link rel="stylesheet" href="style.css"> <!-- Conectando um arquivo css em um arquivo HTML. -->
+
 </head>
+<!-- A estrutura dos elementos que se pode visualizar na página HMTL é formada pelas tags impostas no body (corpo). -->
 
 <body>
+    <header>Esse é o cabeçalho da página HTML.</header>
+    <hr>
+    <h1>Isto é um título [h1]</h1>
+    <h2>Isto é um subtítulo [h2]</h2>
+    <h3>Esse é o h3</h3>
+    <h4>Esse é o h4</h4>
+    <h5>Esse é o h5</h5>
+    <h6>Esse é o h6</h6>
+    <hr>
+    <p><i>Esse é um texto em itálico.</i></p>
+    <p><strong><i>Esse é um texto em itálico e negrito.</i></strong></p>
+    <p><strong>Esse é um texto apenas em negrito.</strong></p>
+    <hr>
+    <p class="lineRed">Isto é um parágrafo <strong><i>com</i></strong> uma classe css atribuída.</p>
+    <p>Isto é um parágrafo <strong><i>sem</i></strong> a classe css atribuída.</p>
+    <hr>
+    <p>Abaixo: Imagem <strong><i>com</i></strong> classe atribuída.</p>
+    <img src="imagens/html.png" alt="Logo do HTML 5." class="center-img">
+    <p>Abaixo: Imagem <strong><i>sem</i></strong> classe atribuída.</p>
+    <img src="imagens/html.png" alt="Logo do HTML 5.">
+    <hr>
+    <ul>
+        <p>Essa é uma lista sem ordenação:</p>
+        <li>Banana</li>
+        <li>Maça</li>
+    </ul>
+    <ol>
+        <p>Essa é uma lista com ordenação:</p>
+        <li>Banana</li>
+        <li>Maça</li>
+    </ol>
+    <hr>
+    <div>
+        <p>Esse é um botão comum em HTML:</p>
+        <button>Botão</button>
+        <hr>
+        <p>Esse é um campo de texto comum em HTML:</p>
+        <textarea name="Descrição" id="texto"></textarea>
+        <hr>
+        <p>Esse é um campo de input comum em HTML (Tipo número):</p>
+        <input type="number">
+    </div>
+    <hr>
+    <div class="estilizacao">
+        <h2>Essa parte vai ser com o fundo preto e a fonte branca.</h2>
+        <p>Essa parte vai ser com o fundo preto e a fonte branca.</p>
+    </div>
+
+    <footer>Esse é o rodapé da página HTML.</footer>
 
 </body>
 

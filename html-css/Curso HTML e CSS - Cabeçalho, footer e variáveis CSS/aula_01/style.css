@@ -1,0 +1,142 @@
+    @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        /*Utilizar 100% da tela*/
+        box-sizing: border-box;
+        /* Evita que a imagem saia da tela*/
+        background-color: black;
+        color: #F6F6F6;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        margin: 2% 20%;
+        gap: 80px;
+    }
+
+    .nav__style {
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: #22D4FD;
+    }
+
+    .apresentacao {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10% 20%;
+    }
+
+    .apresentacao__conteudo {
+        width: 593px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 36px;
+        font-family: "Krona One", sans-serif;
+    }
+
+    .apresentacao__conteudo__subtitulo {
+        font-size: 24px;
+        font-family: "Krona One", sans-serif;
+        font-weight: 400;
+    }
+
+    .apresentacao__conteudo__paragrafo {
+        font-size: 24px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+    }
+
+    .apresentacao__imagem {
+        max-width: 480px;
+        width: 100%;
+        height: auto;
+        border-radius: 24px;
+        display: block;
+    }
+
+    .apresentacao__logo {
+        height: 32px;
+        width: 32px;
+    }
+
+    .apresentacao__containers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        color: #ffffff;
+        border: 2px solid #22D4FD;
+        border-radius: 16px;
+        width: 378px;
+        height: 68px;
+    }
+
+    .apresentacao__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        justify-content: space-between;
+    }
+
+    .apresentacao__links__link {
+        color: #ffffff;
+        width: 378px;
+        height: 68px;
+        text-align: center;
+        font-size: 24px;
+        font-style: inherit;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background-color: #22D4FD;
+        color: black;
+        font-size: 12px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        height: 80px;
+    }
+
+    span {
+        color: #22D4FD;
+        border: 3px solid #22D4FD;
+        padding: 2px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 12px;
+    }
+
+    p {
+        color: #F6F6F6;
+    }
+
+    hr {
+        border: none;
+        height: 3px;
+        background: linear-gradient(to right, #22d3ee, #0ea5e9, #3b82f6);
+        border-radius: 2px;
+    }
+
+    a {
+        color: DodgerBlue;
+    }

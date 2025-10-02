@@ -4,56 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <meta name="description"
+        content="Portfolio pessoal desenvolvido durante atividade disposta em um curso de HTML e CSS da plataforma Alura.">
+    <title>Portfolio - Home</title>
+
+    <!-- Fonts (mais performático que @import no CSS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="imagens/livro.png" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="imagens/livro.png">
 </head>
 
 <body>
     <header>
-        <nav class="nav">
-            <a class="nav__style" href="#">Home</a>
-            <a class="nav__style" href="#">Sobre mim</a>
+        <nav class="container_header" aria-label="Navegação principal">
+            <a class="container_header__font" href="index.html" aria-current="page">Home</a>
+            <a class="container_header__font" href="sobre.html">Sobre mim</a>
         </nav>
     </header>
 
-    <main class="apresentacao">
-        <section id="home" class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Conectando informação, tecnologia e propósito para
-                <span>impulsionar</span>
-                seu negócio digital.
+    <main class="container_main">
+        <section class="container_section" id="home">
+            <h1 class="container_section__h1">
+                Conectando informação, tecnologia e propósito para <span class="destaque">impulsionar</span> seu negócio
+                digital.
             </h1>
-            <p class="apresentacao__conteudo__paragrafo">Olá! Sou Weslley Chaves, desenvolvedor em formação com foco em
-                Back-end e Ciência de Dados. Tenho
-                experiência em análise de requisitos e hoje aplico Python, SQL e Web para transformar ideias em soluções
-                práticas. Vamos conversar?
+
+            <p class="container_section__p">
+                Olá! Sou Weslley Chaves, desenvolvedor em formação com foco em Back-end e Ciência de Dados.
+                Tenho experiência em análise de requisitos e hoje aplico Python, SQL e Web para transformar ideias
+                em soluções práticas. Vamos conversar?
             </p>
-            <div class="apresentacao__links">
-                <h2 class="apresentacao__conteudo__subtitulo">Acesse minhas redes:</h2>
 
-                <div class="apresentacao__containers">
-                    <img class="apresentacao__logo" src="imagens/instagram.png" alt="Logo do Instagram.">
-                    <a class="apresentacao__links__link" src="https://www.instagram.com/weslley_ch4ves/"
-                        target="_blank">Instagram
-                    </a>
-                </div>
+            <div class="container_section__div">
+                <p class="container_section__div__p">Acesse minhas redes:</p>
 
-                <a class="apresentacao__links__link" href="https://github.com/Weslley-Chaves/Weslley-Chaves"
-                    target="_blank"> GitHub
+                <a class="container_section__div__div" href="https://github.com/Weslley-Chaves/Weslley-Chaves"
+                    target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub de Weslley Chaves">
+                    <img class="img_logo" src="imagens/Logo Github.png" alt="Logo do GitHub">
+                    <span>GitHub</span>
                 </a>
-                <a class="apresentacao__links__link" href="www.linkedin.com/in/weslley-s-chaves-789890228"
-                    target="_blank"> LinkedIn
+
+                <a class="container_section__div__div" href="https://www.linkedin.com/in/weslley-s-chaves-789890228/"
+                    target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn de Weslley Chaves">
+                    <img class="img_logo" src="imagens/Logo linkedin.png" alt="Logo do LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+
+                <a class="container_section__div__div" href="https://www.instagram.com/weslley_ch4ves/" target="_blank"
+                    rel="noopener noreferrer" aria-label="Abrir Instagram de Weslley Chaves">
+                    <img class="img_logo" src="imagens/instagram.png" alt="Logo do Instagram">
+                    <span>Instagram</span>
                 </a>
             </div>
         </section>
 
-        <img class="apresentacao__imagem" src="imagens/imagem.png" alt="Foto de perfil de Weslley Santos Chaves.">
-
+        <img class="apresentacao__imagem" src="imagens/imagem.png"
+            alt="Ilustração representando Weslley desenvolvendo software">
     </main>
 
-    <footer class="rodape">
-        <h3>Desenvolvido por Weslley Chaves.</h3>
+    <footer class="container_footer">
+        <p>Desenvolvido por Weslley Chaves</p>
     </footer>
 </body>
 

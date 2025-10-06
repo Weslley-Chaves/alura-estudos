@@ -56,13 +56,3 @@ select {
 button {
     cursor: pointer;
 }
-
-/* 8. Melhora acessibilidade escondendo elementos sem removê-los da tela para leitores */
-.visually-hidden {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap;
-}

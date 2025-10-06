@@ -1,27 +1,32 @@
-# Aula 02 - HTML e CSS: Cabeçalho, Footer e Variáveis CSS
+# Aula 03 - HTML e CSS: Cabeçalho, Footer e Variáveis CSS
 
-Nesta aula, aprofundamos o aprendizado sobre  **posicionamento e interação visual com CSS** , aprimorando o layout do cabeçalho e rodapé.
+Nesta aula, você aprendeu a  **criar e estruturar as seções principais de uma página web** , aplicando boas práticas de semântica e estilização com CSS.
 
 ## ✅ Conceitos aplicados
 
-* Adicionar **ícones** a links clicáveis (usando `<img>` ou bibliotecas como  *Font Awesome* )
-* Alinhar elementos horizontalmente com **`justify-content`**
-* Aplicar **efeitos visuais de interação** com o seletor **`:hover`**
-* Aprimorar a **experiência do usuário (UX)** com botões e links responsivos
-* Reforçar o uso de **variáveis CSS** para manter consistência de cores e espaçamentos
+* Criação e estilização do **footer** (rodapé) da página
+* Estruturação do **header** (cabeçalho) com título e navegação
+* Utilização da tag semântica **`<nav>`** para criar **links de navegação**
+* Aplicação de **estilos consistentes** entre cabeçalho e rodapé
+* Organização do layout com **display: flex** e espaçamentos adequados
 
 ## 💻 Código principal desenvolvido
 
-### Exemplo de cabeçalho com ícones
+### Estrutura HTML
 
 ```html
 <header class="cabecalho">
-  <nav class="menu">
-    <a href="#" class="link"><img src="img/home.svg" alt="Início"> Início</a>
-    <a href="#" class="link"><img src="img/sobre.svg" alt="Sobre"> Sobre</a>
-    <a href="#" class="link"><img src="img/contato.svg" alt="Contato"> Contato</a>
+  <h1>Meu Site</h1>
+  <nav class="menu-navegacao">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
   </nav>
 </header>
+
+<footer class="rodape">
+  <p>© 2025 Meu Site. Todos os direitos reservados.</p>
+</footer>
 ```
 
 ### Estilização com CSS
@@ -29,38 +34,35 @@ Nesta aula, aprofundamos o aprendizado sobre  **posicionamento e interação vis
 ```css
 :root {
   --cor-principal: #5b92ed;
-  --cor-hover: #3b6fcc;
   --cor-fundo: #ffffff;
   --cor-texto: #333;
 }
 
-.cabecalho {
+.cabecalho, .rodape {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--cor-principal);
-  padding: 16px;
+  color: var(--cor-fundo);
+  padding: 16px 32px;
 }
 
-.menu .link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.menu-navegacao a {
   color: var(--cor-fundo);
   text-decoration: none;
   margin: 0 12px;
-  transition: color 0.3s, transform 0.3s;
+  transition: color 0.3s;
 }
 
-.menu .link:hover {
-  color: var(--cor-hover);
-  transform: scale(1.05);
+.menu-navegacao a:hover {
+  color: #dfe9ff;
 }
 ```
 
 ## 🧠 Atividades práticas resolvidas
 
-1. Inserção de ícones em links do cabeçalho e rodapé.
-2. Centralização dos elementos com `justify-content`.
-3. Criação de efeitos de destaque com `:hover`.
-4. Teste de responsividade e legibilidade visual.
-5. Ajustes de espaçamento e harmonia visual do layout.
+1. Criação do **header** da página com título e menu de navegação.
+2. Implementação do **footer** com informações de direitos autorais.
+3. Aplicação da tag semântica `<nav>` para os links principais.
+4. Estilização do cabeçalho e rodapé com cores e alinhamentos.
+5. Testes de exibição em diferentes tamanhos de tela.

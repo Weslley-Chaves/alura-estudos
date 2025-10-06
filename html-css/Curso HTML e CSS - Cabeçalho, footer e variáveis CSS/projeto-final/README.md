@@ -1,57 +1,110 @@
-# Aula 3 - Projeto Final: Portfólio com HTML e CSS
+# 🌐 Portfólio Pessoal – HTML e CSS
 
-## ✅ Conteúdos abordados
+Projeto desenvolvido como parte do curso **“HTML e CSS: Cabeçalho, Footer e Variáveis CSS”** da plataforma  **Alura** .
 
-* [X] Estrutura básica de uma página HTML (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`)
-* [X] Organização do projeto em múltiplos arquivos (`reset.css`, `style.css`, `index.html`)
-* [X] Importação e uso de fontes externas (Google Fonts)
-* [X] Reset CSS moderno para padronização entre navegadores
-* [X] Criação de layout com **Flexbox**
-* [X] Aplicação de classes para organização de estilos
-* [X] Estilização de links como botões de chamada para ação (Instagram e GitHub)
-* [X] Inserção de imagem com `alt` descritivo
-* [X] Paleta de cores com fundo escuro e destaques em azul
-* [X] Estruturação semântica com `<header>`, `<main>`, `<section>` e `<footer>`
+O objetivo foi criar um  **site de portfólio responsivo e semântico** , aplicando boas práticas de estruturação e estilização modernas.
 
-## 💡 Descrição da aula
+---
 
-Nesta aula desenvolvemos a primeira versão do  **projeto final: um portfólio pessoal** .
+## 🧩 Estrutura do Projeto
 
-Organizamos os arquivos de forma modular, utilizando um `reset.css` para normalizar estilos e um `style.css` para definir a identidade visual.
-
-A página foi construída com  **HTML semântico** , destacando:
-
-* Uma seção de apresentação com  **título, parágrafo e imagem de perfil** .
-* Dois links estilizados como botões direcionando para o **Instagram** e o  **GitHub** .
-* Uso de **Flexbox** para alinhar texto e imagem lado a lado.
-
-No CSS, foram aplicadas técnicas como  **fontes externas (Krona One e Montserrat)** , **cores de contraste** (fundo preto e texto branco),  **bordas arredondadas** , **espaçamentos proporcionais** e estilização de elementos (`span`, `hr`, `a`).
-
-O resultado foi uma página inicial de portfólio funcional e visualmente organizada, servindo como base para evoluções futuras.
-
-## 💻 Trecho de código aplicado
-
-```html
-<main class="apresentacao">
-    <section id="sobre" class="apresentacao__conteudo">
-        <h1 class="apresentacao__conteudo__titulo">Conectando informação, tecnologia e propósito para
-            <span>impulsionar</span>
-            seu negócio digital.
-        </h1>
-        <p class="apresentacao__conteudo__paragrafo">Olá! Sou Weslley Chaves, desenvolvedor em formação com foco em
-            Back-end e Ciência de Dados. Tenho
-            experiência em análise de requisitos e hoje aplico Python, SQL e Web para transformar ideias em soluções
-            práticas. Vamos conversar?
-        </p>
-        <div class="apresentacao__links">
-            <a class="apresentacao__links__link" href="https://www.instagram.com/weslley_ch4ves/"
-                target="_blank">Instagram
-            </a>
-            <a class="apresentacao__links__link" href="https://github.com/Weslley-Chaves/Weslley-Chaves"
-                target="_blank"> GitHub
-            </a>
-        </div>
-    </section>
-    <img class="apresentacao__imagem" src="imagens/imagem.png" alt="Foto de perfil de Weslley Santos Chaves.">
-</main>
 ```
+📂 projeto-final
+├── 📁 assets/              # Imagens e ícones (favicon, logos, gif)
+├── 📁 styles/              # Arquivos CSS do projeto
+│   ├── reset.css           # Reset CSS moderno
+│   └── style.css           # Estilos principais
+├── index.html              # Página principal (Home)
+└── about.html              # Página "Sobre mim"
+```
+
+---
+
+## 🎯 Objetivos de Aprendizado
+
+* Entender a **estrutura básica de um projeto web** (HTML + CSS).
+* Criar um **cabeçalho** e um **rodapé** reutilizáveis e responsivos.
+* Utilizar **variáveis CSS** (`:root`) para facilitar a manutenção de cores e fontes.
+* Aplicar **flexbox** para alinhar e distribuir os elementos.
+* Implementar  **efeitos de hover** , gradientes e destaques visuais.
+* Conectar as páginas “Home” e “Sobre mim” através de  **links de navegação semânticos** .
+
+---
+
+## 🖥️ Páginas Desenvolvidas
+
+### 🏠 **Home (`index.html`)**
+
+* Apresenta o **nome, cargo e redes sociais** do autor.
+* Traz uma introdução clara com foco em tecnologia e propósito.
+* Inclui botões interativos com **borda em gradiente** e links para GitHub, LinkedIn e Instagram.
+
+### 👤 **Sobre mim (`about.html`)**
+
+* Apresenta o **perfil pessoal e profissional** do autor.
+* Contém uma breve trajetória acadêmica e profissional.
+* Exibe uma lista de **habilidades técnicas** (Python, SQL, HTML, CSS, Git, etc.).
+* Inclui uma **animação ilustrativa (GIF)** representando o trabalho com tecnologia.
+
+---
+
+## 🎨 Tecnologias e Conceitos Utilizados
+
+| Categoria                   | Descrição                                                          |
+| --------------------------- | -------------------------------------------------------------------- |
+| **HTML5 Semântico**  | Uso de `<header>`,`<main>`,`<section>`,`<nav>`e `<footer>` |
+| **CSS3 Moderno**      | Seletores, pseudo-classes (`:hover`), variáveis CSS e gradientes  |
+| **Flexbox**           | Alinhamento e espaçamento responsivo dos elementos                  |
+| **Tipografia**        | Fontes importadas via Google Fonts (`Krona One`e `Montserrat`)   |
+| **Acessibilidade**    | Atributos `aria-label`e `aria-current`                           |
+| **Design Responsivo** | Layout fluido com unidades relativas e reset CSS                     |
+| **SEO Básico**       | Uso de meta tags e descrições descritivas                          |
+
+---
+
+## 💅 Destaques de Estilo
+
+* **Cores principais** :
+* Fundo: `#000000` (escuro)
+* Texto: `#ffffff` (claro)
+* Destaque: `#22d4fd` (ciano)
+* Gradientes: `#2adf7b → #7cc7f5`
+* **Efeitos aplicados** :
+* Hover com transição suave
+* Borda em gradiente nos botões
+* Texto destacado com *capsule gradient*
+
+---
+
+## ⚙️ Como Executar
+
+1. **Baixe o projeto** ou clone o repositório:
+   ```bash
+   git clone https://github.com/SeuUsuario/projeto-final-html-css.git
+   ```
+2. Abra o arquivo `index.html` em qualquer navegador moderno.
+3. Navegue entre as páginas **Home** e **Sobre mim** pelos links no cabeçalho.
+
+---
+
+## 🧠 Aprendizados Consolidado
+
+Durante o desenvolvimento, foram reforçados conceitos fundamentais como:
+
+* Organização semântica do HTML
+* Estrutura de pastas de um projeto web
+* Uso de variáveis CSS e reaproveitamento de estilos
+* Transições e interatividade visual com hover
+* Identidade visual coerente entre múltiplas páginas
+
+---
+
+## 👨‍💻 Autor
+
+**Weslley Chaves**
+
+Desenvolvedor em formação — foco em **Back-end** e  **Ciência de Dados** .
+
+📫 [LinkedIn](https://www.linkedin.com/in/weslley-s-chaves-789890228/)
+
+💻 [GitHub](https://github.com/Weslley-Chaves)

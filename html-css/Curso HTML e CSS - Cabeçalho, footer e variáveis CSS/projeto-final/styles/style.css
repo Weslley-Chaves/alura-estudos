@@ -1,23 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
+:root {
+    /* Paleta */
+    --cor-primaria: #000000;
+    /* fundo escuro */
+    --cor-secundaria: #ffffff;
+    /* texto claro */
+    --cor-terciaria: #22d4fd;
+    /* destaque (ciano) */
+
+    /* Gradientes usados em botões/rodapé */
+    --gradiente-inicio: #2adf7b;
+    /* verde */
+    --gradiente-fim: #7cc7f5;
+    /* azul claro */
+
+    /* Fontes */
+    --font-primaria: "Krona One", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+}
+
+/* Box sizing global */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: black;
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
     font-weight: 400;
 }
 
+/* ----------------- Header ----------------- */
 .container_header {
     display: flex;
     gap: 80px;
@@ -25,15 +46,15 @@ body {
 }
 
 .container_header__font {
-    color: #ffffff;
+    color: var(--cor-secundaria);
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 24px;
     font-weight: 600;
     text-decoration-color: rgba(255, 255, 255, 0.172);
     opacity: 0.4;
     /* todos começam apagados */
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, text-decoration-color 7s ease-out 0.1s;
 }
 
 .container_header__font:hover {
@@ -41,7 +62,6 @@ body {
     text-decoration: underline;
     text-underline-offset: 6px;
     text-decoration-color: rgba(255, 255, 255, 0.172);
-    transition: text-decoration-color 7s ease-out 0.1s;
 }
 
 .container_header__font[aria-current="page"] {
@@ -49,10 +69,12 @@ body {
     text-underline-offset: 6px;
     text-decoration-color: rgba(255, 255, 255, 0.859);
     opacity: 1;
-    transition: opacity 0.3s ease
+    transition: opacity 0.3s ease;
 }
 
-.container_main {
+/* ----------------- Main ----------------- */
+.container_main,
+.container_main_sobre {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,14 +84,8 @@ body {
 }
 
 .container_main_sobre {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 20%;
-    margin-left: 20%;
     text-align: justify;
 }
-
 
 .container_section {
     display: flex;
@@ -80,15 +96,14 @@ body {
 
 .container_section__h1 {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--font-primaria);
     width: 593px;
     height: auto;
 }
 
 .container_section__p {
     text-align: justify;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
+    font-family: var(--font-secundaria);
     font-weight: 400;
 }
 
@@ -98,20 +113,20 @@ body {
     flex-direction: column;
     gap: 32px;
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
+    font-family: var(--font-secundaria);
     font-weight: 600;
 }
 
 .container_section__div__p {
     font-size: 24px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--font-primaria);
     text-align: center;
     font-weight: 400;
     width: 593px;
     height: auto;
 }
 
+/* Botão cápsula com borda em gradiente */
 .container_section__div__div {
     display: flex;
     justify-content: center;
@@ -122,34 +137,31 @@ body {
     height: 68px;
     width: 378px;
     cursor: pointer;
-    transition: all 0.3s ease-out;
 
+    /* Fundo usa a cor primária; borda usa gradiente */
     background:
-        linear-gradient(#000, #000) padding-box,
-        linear-gradient(90deg, #2adf7b, #7cc7f5) border-box;
+        linear-gradient(var(--cor-primaria), var(--cor-primaria)) padding-box,
+        linear-gradient(90deg, var(--gradiente-inicio), var(--gradiente-fim)) border-box;
 
     /* pequena sombra para dar profundidade */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    /* transições */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, border 0.3s ease-out;
 }
 
 .container_section__div__div:hover {
-
-
     /* Efeito saltante */
-    transform: translateX(5px);
-    transform: translateY(-2px);
-    /* sobe um pouco */
+    transform: translateX(5px) translateY(-2px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    /* aumenta a sombra */
 }
 
 .container_section__div__div:active {
-    /* Quando o botão é clicado, ele "desce" um pouco */
-    transform: translateY(-0px);
+    transform: translateY(0);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-
+/* ----------------- Mídia ----------------- */
 .img_logo {
     height: 32px;
     width: 32px;
@@ -160,46 +172,40 @@ body {
     height: 550px;
 }
 
+.apresentacao__gif {
+    width: 300px;
+    height: auto;
+}
+
+/* ----------------- Rodapé ----------------- */
 .container_footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #22d4fd;
+    /* fundo em gradiente usando variáveis */
+    background: linear-gradient(90deg, var(--gradiente-fim), var(--gradiente-inicio));
     height: 80px;
     width: auto;
     margin-top: 110px;
-    color: rgb(255, 255, 255);
-    font-family: "Montserrat", sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
     font-size: 18px;
     font-weight: 600;
     border: 3px solid transparent;
-    background: linear-gradient(90deg, #7cc7f5, #2adf7b);
 }
 
-.container_section__div__div {
-    transition: 0.3s ease-out, border 0.3s ease-out;
-}
-
-.apresentacao__gif {
-    width: 300px;
-    height: auto
-}
-
+/* ----------------- Destaques ----------------- */
 .destaque {
     display: inline-block;
-    /* faz a cápsula ajustar ao conteúdo */
+    /* cápsula ajusta ao conteúdo */
     padding: .0em .45em;
-    /* espaço interno */
     border-radius: 999px;
     /* cantos totalmente arredondados */
     white-space: nowrap;
     /* evita quebra no meio da palavra */
 
-    /* 2 camadas: 1) preenchimento azul, 2) borda em gradiente */
-    background:
-        /* fundo da cápsula */
-        linear-gradient(90deg, #2adf7b, #7cc7f5) border-box;
-    /* borda gradiente */
+    /* cápsula com gradiente */
+    background: linear-gradient(90deg, var(--gradiente-inicio), var(--gradiente-fim)) border-box;
     color: #0b1a21;
-    /* cor do texto dentro do azul (opcional) */
+    /* cor do texto dentro do azul/verde */
 }

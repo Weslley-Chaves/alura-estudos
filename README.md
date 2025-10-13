@@ -17,11 +17,13 @@ Aqui organizo os cursos em  **pastas separadas** , dividindo o conteúdo por **c
 
 ## 👨‍💻 Cursos em andamento
 
-| Curso                                                                             | Progresso    | Pasta                                        |
-| --------------------------------------------------------------------------------- | ------------ | -------------------------------------------- |
-| **Curso de Lógica de Programação - Explore funções e listas com JS**   | Concluído   | [`logica-js/`](https://chatgpt.com/logica-js) |
-| **HTML e CSS - Ambientes de desenvolvimento, estrutura de arquivos e tags** | Concluído   | [`html-css/`](https://chatgpt.com/html-css)   |
-| **HTML e CSS - Cabeçalho, footer e variáveis CSS**                        | Em andamento | [`html-css/`](https://chatgpt.com/html-css)   |
+| Curso                                                                             | Progresso  | Pasta                                        |
+| --------------------------------------------------------------------------------- | ---------- | -------------------------------------------- |
+| **Curso de Lógica de Programação - Explore funções e listas com JS**   | Concluído | [`logica-js/`](https://chatgpt.com/logica-js) |
+| **HTML e CSS - Ambientes de desenvolvimento, estrutura de arquivos e tags** | Concluído | [`html-css/`](https://chatgpt.com/html-css)   |
+| **HTML e CSS - Cabeçalho, footer e variáveis CSS**                        | Concluído | [`html-css/`](https://chatgpt.com/html-css)   |
+| **HTML e CSS - Trabalhando com responsividade e publicação de projetos**                        | Em andamento | [`html-css/`](https://chatgpt.com/html-css)   |
+| **Curso de Python para Data Science - trabalhando com funções, estruturas de dados e exceções**                        | Em andamento | [`python/`](https://chatgpt.com/python)   |
 
 > ✅ *Cada pasta segue a mesma estrutura de aulas e contém um README próprio com anotações e exemplos práticos.*
 
